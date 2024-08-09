@@ -9,28 +9,34 @@
 </head>
 <body>
     <div class="main-body">
-        <div class="cards">
-            <p class="names" id="home-name">HOME</p>
-            <div class="score-contain">
-                <p class="score" id="home-score">0</p>
+        <div class="card-contain">
+            <div class="cards">
+                <p class="names" id="home-name">HOME</p>
+                <div class="score-contain">
+                    <p class="score" id="home-score">0</p>
+                </div>
+                <div class="score-changer" id="home-changer">
+                    <button onclick="increment(1,'home')">+1</button>
+                    <button onclick="increment(2,'home')">+2</button>
+                    <button onclick="increment(3,'home')">+3</button>
+                </div>
             </div>
-            <div class="score-changer" id="home-changer">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
+            <div class="cards">
+                <p class="names" id="guest-name">GUEST</p>
+                <div class="score-contain">
+                    <p class="score" id="guest-score">0</p>
+                </div>
+                <div class="score-changer" id="guest-changer">
+                    <button onclick="increment(1,'guest')">+1</button>
+                    <button onclick="increment(2,'guest')">+2</button>
+                    <button onclick="increment(3,'guest')">+3</button>
+                </div>
             </div>
         </div>
-        <div class="cards">
-            <p class="names" id="guest-name">GUEST</p>
-            <div class="score-contain">
-                <p class="score" id="guest-score">0</p>
-            </div>
-            <div class="score-changer" id="guest-changer">
-                <button>+1</button>
-                <button>+2</button>
-                <button>+3</button>
-            </div>
+        <div>
+            <button id="reset-btn">Reset</button>
         </div>
-    </div>   
+    </div> 
+    <script src="main.js"></script>  
 </body>
 </html>

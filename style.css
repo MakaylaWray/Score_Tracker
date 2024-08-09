@@ -7,19 +7,22 @@ body{
 }
 .main-body{
     display:flex;
-    gap: 8rem;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     background-color: #1a244e;
     width: 700px;
-    height: 400px;
+    height: 480px;
     border-style: solid;
     border-color: white;
     border-width: 15px;
     border-radius: 20px;
-
 }
-
+.card-contain{
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
 .cards{
     display:flex;
     flex-direction: column;
@@ -74,5 +77,34 @@ body{
 .score-changer button:hover{
     background-color: white;
     color: black;
+    cursor: pointer;
+}
+.score-changer button:active{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+#reset-btn{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
+    background-color: #e66179;
+    border-color: #ED4D6A;
+    border-style: solid;
+    color: white;
+    font-family: 'Lucida Sans',Verdana, sans-serif;
+    border-radius: 20px;
+
+}
+
+#reset-btn:hover{
+    background-color: #dc3150;
+    border-color: #dc3150;
+    cursor: pointer;
+}
+#reset-btn:active{
+    background-color: white;
+    border-color: white;
     cursor: pointer;
 }
