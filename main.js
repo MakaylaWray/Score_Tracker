@@ -35,3 +35,9 @@ function increment(amount,team){
         }
     }
 }
+function reset(){
+    homeScore = 0;
+    guestScore = 0;
+    homeEl.innerText = homeScore;
+    guestEl.innerText = guestScore;
+}
