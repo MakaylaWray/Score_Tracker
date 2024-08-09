@@ -3,14 +3,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 1000px;
-    background-color: lightcyan;
+    background-color: #DDEAE1;
 }
 .main-body{
     display:flex;
-    gap: 2rem;
+    gap: 8rem;
     justify-content: center;
     align-items: center;
-    background-color: navy;
+    background-color: #1a244e;
     width: 700px;
     height: 400px;
     border-style: solid;
@@ -30,10 +30,17 @@ body{
     font-family: 'Lucida Sans',Verdana, sans-serif;
     font-weight: bold;
 }
+.score{
+    text-align: center;
+    color:#ED4D6A;
+    font-size: 80px;
+    font-family: '60s Scoreboard', sans-serif;
+    margin: 0;
+}
+.score-contain{
+    background-color: black;
+    border-radius: 20px;
+}
 .score-changer{
     display: flex;
-}
-.scores{
-    font-family: '60s Scoreboard', sans-serif;
-    font-size: 80px;
 }
